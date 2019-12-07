@@ -96,85 +96,6 @@ void vendor_load_properties()
             property_set("gsm.sim.operator.alpha", "Google Fi");
             property_set("persist.radio.fi_supported", "1");
             property_set("persist.vendor.radio.fi_supported", "1");
-/*        } else if (modem == "VZW_USA_RETAIL") {
-            sprintf(carrier, "retus");
-            sprintf(customerid, "retail");
-            sprintf(mot_clientidbase.am, "android-motorola");
-            sprintf(clientidbase.am, "android-motorola");
-            sprintf(mot_clientidbase.ms, "android-motorola-gfw");
-            sprintf(clientidbase.ms, "android-motorola-rev2");
-            property_set("ro.cdma.home.operator.alpha", "Verizon");
-            property_set("ro.cdma.home.operator.numeric", "311480");
-            property_set("gsm.apn.sim.operator.numeric", "311480");
-            property_set("gsm.current.phone-type", "2");
-            property_set("gsm.defaultpdpcontext.active", "true");
-            property_set("gsm.operator.alpha", "Verizon");
-            property_set("gsm.operator.numeric", "311480");
-            property_set("gsm.sim.nas.numeric", "311480,");
-            property_set("gsm.sim.operator.alpha", "Verizon");
-            property_set("gsm.sim.operator.numeric", "311480");
-            property_set("gsm.sim.operator.numeric.orig", "311480"); */
-/*        } else if (modem == "FI_SPRINT") {
-            sprintf(carrier, "fi");
-            sprintf(customerid, "retail");
-            sprintf(clientidbase.am, "");
-            sprintf(mot_clientidbase.am, "");
-            sprintf(clientidbase.ms, "android-fi");
-            sprintf(mot_clientidbase.ms, "android-fi");
-            property_set("ro.cdma.home.operator.alpha", "Google Fi");
-            property_set("ro.cdma.home.operator.numeric", "310120");
-            property_set("gsm.apn.sim.operator.numeric", "310120");
-            property_set("gsm.current.phone-type", "2");
-            property_set("gsm.defaultpdpcontext.active", "true");
-            property_set("gsm.operator.alpha", "Google Fi");
-            property_set("gsm.operator.numeric", "310120");
-            property_set("gsm.sim.nas.numeric", "310120,");
-            property_set("gsm.sim.operator.alpha", "Google Fi");
-            property_set("gsm.sim.operator.numeric", "310120");
-            property_set("gsm.sim.operator.numeric.orig", "310120");
-            property_set("ro.ril.enable.amr.wideband", "1");
-            property_set("persist.radio.fi_supported", "1");
-            property_set("persist.vendor.radio.fi_supported", "1"); */
-/*        } else if (modem == "FI_TMO") {
-            sprintf(carrier, "fi");
-            sprintf(customerid, "retail");
-            sprintf(clientidbase.am, "");
-            sprintf(mot_clientidbase.am, "");
-            sprintf(clientidbase.ms, "android-fi");
-            sprintf(mot_clientidbase.ms, "android-fi");
-            property_set("ro.cdma.home.operator.alpha", "Google Fi");
-            property_set("ro.cdma.home.operator.numeric", "310260");
-            property_set("gsm.apn.sim.operator.numeric", "310260");
-            property_set("gsm.current.phone-type", "2");
-            property_set("gsm.defaultpdpcontext.active", "true");
-            property_set("gsm.operator.alpha", "Google Fi");
-            property_set("gsm.operator.numeric", "310260");
-            property_set("gsm.sim.nas.numeric", "310260,");
-            property_set("gsm.sim.operator.alpha", "Google Fi");
-            property_set("gsm.sim.operator.numeric", "310260");
-            property_set("gsm.sim.operator.numeric.orig", "310260");
-            property_set("persist.radio.fi_supported", "1");
-            property_set("persist.vendor.radio.fi_supported", "1"); */
-/*        } else if (modem == "FI_USC") {
-            sprintf(carrier, "fi");
-            sprintf(customerid, "retail");
-            sprintf(clientidbase.am, "");
-            sprintf(mot_clientidbase.am, "");
-            sprintf(clientidbase.ms, "android-fi");
-            sprintf(mot_clientidbase.ms, "android-fi");
-            property_set("ro.cdma.home.operator.alpha", "Google Fi");
-            property_set("ro.cdma.home.operator.numeric", "311580");
-            property_set("gsm.apn.sim.operator.numeric", "311580");
-            property_set("gsm.current.phone-type", "2");
-            property_set("gsm.defaultpdpcontext.active", "true");
-            property_set("gsm.operator.alpha", "Google Fi");
-            property_set("gsm.operator.numeric", "311580");
-            property_set("gsm.sim.nas.numeric", "311580,");
-            property_set("gsm.sim.operator.alpha", "Google Fi");
-            property_set("gsm.sim.operator.numeric", "311580");
-            property_set("gsm.sim.operator.numeric.orig", "311580");
-            property_set("persist.radio.fi_supported", "1");
-            property_set("persist.vendor.radio.fi_supported", "1"); */
         }
 
         property_set("ro.mot.gms.clientidbase", "android-motorola");
@@ -187,17 +108,6 @@ void vendor_load_properties()
         property_set("persist.radio.cdma.msgid", "2");
         property_set("telephony.lteOnCdmaDevice", "1");
         property_set("gsm.defaultpdpcontext.active", "true");
-    } else if (sku == "XT1962-4") {
-        /* XT1962-4
-        sprintf(customerid, "retasia");
-        property_set("ro.fsg-id", "apac");
-        property_set("persist.radio.process_sups_ind", "0");*/
-    } else if (sku == "XT1962-5") {
-        /* XT1962-5
-        MSIM = true;
-        sprintf(customerid, "retasia");
-        property_set("ro.fsg-id", "apac");
-        property_set("persist.radio.process_sups_ind", "0"); */
     }
 
     sprintf(description, "[river-user 9 PPOS29.114-134-2 4595e release-keys");
