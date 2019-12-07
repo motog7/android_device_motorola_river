@@ -27,3 +27,81 @@
 
 on property:ro.boot.hardware.sku=XT1962-5
     setprop ro.boot.product.hardware.sku nfc
+
+on property:persist.vendor.radio.mcfg_version=VZW_USA_RETAIL
+    setprop ro.cdma.home.operator.alpha Verizon
+    setprop ro.cdma.home.operator.numeric 311480
+    setprop gsm.apn.sim.operator.numeric 311480
+    setprop gsm.current.phone-type 2
+    setprop gsm.defaultpdpcontext.active true
+    setprop gsm.operator.alpha Verizon
+    setprop gsm.operator.numeric 311480
+    setprop gsm.sim.nas.numeric 311480,
+    setprop gsm.sim.operator.alpha Verizon
+    setprop gsm.sim.operator.numeric 311480
+    setprop gsm.sim.operator.numeric.orig 311480
+
+on property:persist.vendor.radio.mcfg_version=SPRINT_USA
+    setprop ro.cdma.home.operator.alpha Sprint
+    setprop gsm.sim.operator.alpha Sprint
+    setprop gsm.operator.alpha=Sprint
+    setprop gsm.apn.sim.operator.numeric 310120
+    setprop gsm.operator.numeric 310120
+    setprop gsm.sim.nas.numeric 310120,
+    setprop ro.cdma.home.operator.numeric 310120
+    setprop gsm.sim.operator.numeric 310120
+    setprop gsm.sim.operator.numeric.orig 310120
+    setprop gsm.operator.numeric 310120
+    setprop gsm.sim.operator.iso-country us
+    setprop gsm.operator.iso-country us
+    setprop ro.ril.enable.amr.wideband 1
+    setprop persist.radio.cdma.msgid 2
+    setprop telephony.lteOnCdmaDevice 1
+
+on property:persist.vendor.radio.mcfg_version=FI_SPRINT
+    setprop ro.cdma.home.operator.alpha Google Fi
+    setprop gsm.sim.operator.alpha Google Fi
+    setprop gsm.operator.alpha=Google Fi
+    setprop gsm.apn.sim.operator.numeric 310120
+    setprop gsm.operator.numeric 310120
+    setprop gsm.sim.nas.numeric 310120,
+    setprop ro.cdma.home.operator.numeric 310120
+    setprop gsm.sim.operator.numeric 310120
+    setprop gsm.sim.operator.numeric.orig 310120
+    setprop gsm.operator.numeric 310120
+    setprop gsm.sim.operator.iso-country us
+    setprop gsm.operator.iso-country us
+    setprop ro.ril.enable.amr.wideband 1
+    setprop persist.radio.cdma.msgid 2
+    setprop telephony.lteOnCdmaDevice 1
+
+on property:persist.vendor.radio.mcfg_version=FI_TMO
+    setprop ro.cdma.home.operator.alpha Google Fi
+    setprop ro.cdma.home.operator.numeric 310260
+    setprop gsm.apn.sim.operator.numeric 310260
+    setprop gsm.current.phone-type 2
+    setprop gsm.defaultpdpcontext.active true
+    setprop gsm.operator.alpha Google Fi
+    setprop gsm.operator.numeric 310260
+    setprop gsm.sim.nas.numeric 310260,
+    setprop gsm.sim.operator.alpha Google Fi
+    setprop gsm.sim.operator.numeric 310260
+    setprop gsm.sim.operator.numeric.orig 310260
+    setprop persist.radio.fi_supported 1
+    setprop persist.vendor.radio.fi_supported 1
+
+on property:persist.vendor.radio.mcfg_version=FI_USC
+    setprop ro.cdma.home.operator.alpha Google Fi
+    setprop ro.cdma.home.operator.numeric 311580
+    setprop gsm.apn.sim.operator.numeric 311580
+    setprop gsm.current.phone-type 2
+    setprop gsm.defaultpdpcontext.active true
+    setprop gsm.operator.alpha Google Fi
+    setprop gsm.operator.numeric 311580
+    setprop gsm.sim.nas.numeric 311580
+    setprop gsm.sim.operator.alpha Google Fi
+    setprop gsm.sim.operator.numeric 311580
+    setprop gsm.sim.operator.numeric.orig 311580
+    setprop persist.radio.fi_supported 1
+    setprop persist.vendor.radio.fi_supported 1
+

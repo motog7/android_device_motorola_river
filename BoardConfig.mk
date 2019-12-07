@@ -22,6 +22,10 @@ DEVICE_PATH := device/motorola/river
 # Assertions
 TARGET_OTA_ASSERT_DEVICE := river
 
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_river
+TARGET_RECOVERY_DEVICE_MODULES := libinit_river
+
 # Kernel
 TARGET_KERNEL_CONFIG := river_defconfig
 
