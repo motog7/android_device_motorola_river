@@ -25,8 +25,17 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+# NA/USA Single Sim No NFC
+on property:ro.boot.hardware.sku=XT1962-1
+    setprop ro.boot.product.hardware.sku _b
+
+# LA/BR Dual-Sim No NFC
+on property:ro.boot.hardware.sku=XT1962-4
+    setprop ro.boot.product.hardware.sku _d
+
+# EU Dual-Sim NFC Model
 on property:ro.boot.hardware.sku=XT1962-5
-    setprop ro.boot.product.hardware.sku nfc
+    setprop ro.boot.product.hardware.sku _dn
 
 on property:persist.vendor.radio.mcfg_version=VZW_USA_RETAIL
     setprop ro.cdma.home.operator.alpha Verizon
