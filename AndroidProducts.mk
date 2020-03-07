@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_river.mk
+    $(LOCAL_DIR)/havoc_river.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_river-eng \
-    lineage_river-user \
-    lineage_river-userdebug
+    havoc_river-eng \
+    havoc_river-user \
+    havoc_river-userdebug
